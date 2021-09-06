@@ -1,1 +1,55 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <h5>Mi progreso</h5><span></span>
+        </div>
+        <div class="card-body">
+            <div class="col">
+                <div class="progress">
+                  <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" 
+                    role="progressbar" 
+                    [style.width]="getPorcentaje"
+                    >
+                </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-secondary" 
+                        role="progressbar" 
+                        
+                        
+                        >
+                    </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+            <fieldset>
+              <div class="input-group bootstrap-touchspin">
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary btn-square bootstrap-touchspin-down" (click)="cambiarValor(-5)" type="button" data-original-title="" title=""><i class="fa fa-minus"></i></button>
+                </div>
+                <div class="input-group-prepend"><span class="input-group-text bootstrap-touchspin-prefix" style="display: none;"></span></div>
+                <input class="touchspin form-control" type="number" value="40" data-original-title="" title="" style="display: block;" [(ngModel)]="progreso" ><div class="input-group-append"><span class="input-group-text bootstrap-touchspin-postfix" style="display: none;"></span></div>
+                <div class="input-group-append ml-0">
+                    <button class="btn btn-primary btn-square bootstrap-touchspin-up" (click)="cambiarValor(5)" type="button" data-original-title="" title=""><i class="fa fa-plus"></i></button>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+      </div>
+    </div>
+  </div>

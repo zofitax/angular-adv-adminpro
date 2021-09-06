@@ -6,11 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ProgressComponent implements OnInit {
+export class ProgressComponent  {
 
-  constructor() { }
+  progreso: number = 40;
 
-  ngOnInit(): void {
+  get getPorcentaje() {
+    return `${ this.progreso }%`;
+  }
+
+  cambiarValor( valor: number) {
+    this.progreso = this.progreso + valor;
   }
 
 }

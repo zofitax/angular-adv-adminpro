@@ -1,33 +1,35 @@
 <!-- page-wrapper Start-->
 <div class="page-wrapper">
-    <app-header></app-header>
-    <div class="page-body-wrapper">
-      <app-sidebar class="page-sidebar"></app-sidebar>
-      <div class="page-body">
+  <app-header></app-header>
+  <div class="page-body-wrapper">
+    <app-sidebar class="page-sidebar"></app-sidebar>
+    <div class="page-body">
+      <div class="container-fluid">
+        <app-breadcrumbs></app-breadcrumbs>
+        <!-- sistema de rutas-->
+        
+    </div>
+        <!-- Container-fluid starts-->
         <div class="container-fluid">
-          <app-breadcrumbs></app-breadcrumbs>
-          <!-- sistema de rutas-->
-  
-          <!-- Container-fluid starts-->
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h5>Sample Card</h5><span></span>
-                  </div>
-                  <div class="card-body">
-                    <router-outlet></router-outlet>
-                  </div>
+            <router-outlet></router-outlet>
+          <!--<div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h5>Sample Card</h5><span></span>
+                </div>
+                <div class="card-body">
+                  
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Container-fluid Ends-->
-  
+          </div>-->
         </div>
-      </div>
-      <app-footer></app-footer>
+        <!-- Container-fluid Ends-->
+
+      
     </div>
+    <app-footer></app-footer>
   </div>
-  
+</div>
+

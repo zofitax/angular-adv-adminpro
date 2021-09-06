@@ -1,1 +1,3 @@
-feather.replace()
+const featherInitFunc = () => {
+    feather.replace();
+}

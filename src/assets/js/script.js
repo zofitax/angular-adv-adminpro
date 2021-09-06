@@ -37,6 +37,7 @@
 
 $('.loader-wrapper').fadeOut('slow', function() {
     $(this).remove();
+    console.log('inicio','script');
 });
 
 $(window).on('scroll', function() {

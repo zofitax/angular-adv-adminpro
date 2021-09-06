@@ -1,3 +1,6 @@
+const sidebarInitFunc = () => {
+  
+
 $.sidebarMenu = function(menu) {
   var animationSpeed = 300,
       subMenuSelector = '.sidebar-submenu';
@@ -58,3 +61,6 @@ $( window ).resize(function() {
     $nav.removeClass("open");
   }
 });
+
+console.log('init', 'menu');
+}

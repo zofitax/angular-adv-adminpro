@@ -8,6 +8,8 @@ import { AuthModule } from './auth/auth.module';
 
 import { AppComponent } from './app.component';
 import { NopagesComponent } from './pages/nopages/nopages.component';
+import { ComponentsModule } from './components/components.module';
+
 
 
 
@@ -15,14 +17,17 @@ import { NopagesComponent } from './pages/nopages/nopages.component';
   declarations: [
     AppComponent,
     
-    NopagesComponent
+    NopagesComponent,
+         
     
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    AuthModule
+    AuthModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
